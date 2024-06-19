@@ -4,7 +4,6 @@ library(bslib)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
-library(shiny)
 
 source("nba_shots.R")
 shots_22_23 <- read.csv("data/shotdetail_2022.csv")
