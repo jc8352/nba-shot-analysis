@@ -92,7 +92,7 @@ vs_average <- function(shots) {
 
 #plot z-scores
 plot_player_vs_avg <- function(player_vs_league, player) {
-  viz = ggplot(data=player_vs_league%>%filter(PLAYER_NAME==player), aes(x=SHOT_DISTANCE, y=z)) +
+  viz <- ggplot(data=player_vs_league%>%filter(PLAYER_NAME==player), aes(x=SHOT_DISTANCE, y=z)) +
     geom_col(just=.5) +
     labs(title="Z-Score of Shooting Percentage from Each Distance", x="Distance from Basket (ft)", y="Z-Score", subtitle="Number of standard deviations above/below league average shooting percentage at each distance from basket")
   viz
